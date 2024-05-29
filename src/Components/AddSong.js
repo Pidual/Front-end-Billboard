@@ -18,7 +18,6 @@ const AddSong = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
         fetch('http://127.0.0.1:4000/music', {
             method: 'POST',
             headers: {
