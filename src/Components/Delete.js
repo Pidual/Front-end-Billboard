@@ -42,34 +42,7 @@ const DeleteSong = () => {
 
     return (
         <div className="AddSong">
-            <h2>Add a New Song</h2>
-            <form onSubmit={handleSubmit}>
-                <label>
-                    Rank:
-                    <input type="text" name="rank" value={formData.rank} onChange={handleChange} required />
-                </label>
-                <label>
-                    Song Name:
-                    <input type="text" name="song_name" value={formData.song_name} onChange={handleChange} required />
-                </label>
-                <label>
-                    Singer:
-                    <input type="text" name="singer" value={formData.singer} onChange={handleChange} required />
-                </label>
-                <label>
-                    Last Week:
-                    <input type="text" name="last_week" value={formData.last_week} onChange={handleChange} required />
-                </label>
-                <label>
-                    Peak Position:
-                    <input type="text" name="peak_position" value={formData.peak_position} onChange={handleChange} required />
-                </label>
-                <label>
-                    Weeks on Chart:
-                    <input type="text" name="weeks_on_chart" value={formData.weeks_on_chart} onChange={handleChange} required />
-                </label>
-                <button type="submit">Agregar Cancion</button>
-            </form>
+            
         </div>
     );
 };

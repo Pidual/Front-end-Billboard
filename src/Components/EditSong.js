@@ -44,16 +44,16 @@ const EditSong = () => {
     const handleEditSubmit = async (e) => {
         e.preventDefault();
         const updatedSong = {
-            'Song Name': newSongName,
-            'Singer': singer,
-            'Rank': rank,
-            'Last Week': lastWeek,
-            'Peak Position': peakPosition,
-            'Weeks on Chart': weeksOnChart,
+            'rank': rank,
+            'song_name': newSongName,
+            'singer': singer,
+            'last_week': lastWeek,
+            'peak_position': peakPosition,
+            'weeks_on_chart': weeksOnChart,
         };
 
         try {
-            const response = await fetch(`http://127.0.0.1:4000/songs/${encodeURIComponent(songName)}`, {
+            const response = await fetch(`http://127.0.0.1:4000/edit/${encodeURIComponent(songName)}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
