@@ -3,6 +3,7 @@ import React from 'react';
 import './Billboard.css';
 import Table from "../Components/Table";
 import AddSong from "../Components/AddSong";
+import EditSong from "../Components/EditSong";
 
 const Billboard = () => {
     return (
@@ -12,7 +13,7 @@ const Billboard = () => {
                 <AddSong></AddSong>
 
                 <button className="remove-song">Quitar Cancion</button>
-                <button className="edit-song">Editar Cancion</button>
+                <EditSong></EditSong>
             </div>
             <Table></Table>
         </div>
